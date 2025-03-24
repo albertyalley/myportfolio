@@ -337,93 +337,113 @@ nav,
         }
     }
  /* General Section Styling */
+#coursework {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #eef2f3, #dce1e4); /* Softer gradient */
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Section Title */
+h2 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Course Card Styling */
+.course {
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Softened Background Colors */
+.theory { background: linear-gradient(to right, #ffb6c1, #ffdee9); }
+.student-affairs { background: linear-gradient(to right, #c1e1ff, #a6c1ee); }
+.assessment { background: linear-gradient(to right, #c1f0c1, #84fab0); }
+
+/* Course Title */
+.course h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Course List */
+.course ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.course li::before {
+    content: "✔";
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Hover effect */
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     #coursework {
-        padding: 40px;
-        background: linear-gradient(135deg, #f0f4f8, #e6ecf3);
-        border-radius: 12px;
-        max-width: 900px;
-        margin: 20px auto;
+        padding: 30px 15px;
+    }
+
+    .course {
+        padding: 20px;
         text-align: center;
-        font-family: 'Arial', sans-serif;
     }
 
     h2 {
-        color: #333;
-        font-size: 28px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
+        font-size: 26px;
     }
 
-    /* Course Card Styling */
-    .course {
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 12px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-        position: relative;
-        overflow: hidden;
-        text-align: left;
-    }
-
-    /* Background colors for different courses */
-    .theory { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
-    .student-affairs { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }
-    .assessment { background: linear-gradient(to right, #84fab0, #8fd3f4); }
-
-    .course h3 {
-        color: white;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
-    .course ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: left;
-    }
-
-    .course li {
-        background: rgba(255, 255, 255, 0.2);
-        padding: 8px;
-        margin: 5px 0;
-        border-radius: 5px;
-        color: white;
-    }
-
-    /* Icon Styling */
     .icon {
         font-size: 40px;
-        color: white;
-        margin-bottom: 10px;
-        text-align: center;
     }
+}
 
-    /* Hover effect */
-    .course:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        #coursework {
-            padding: 20px;
-        }
-
-        .course {
-            padding: 15px;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        .icon {
-            font-size: 35px;
-        }
-    }
 /* Resume Boxes */
 .resume-box {
     flex: 1;
