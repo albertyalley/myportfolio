@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Social Media Manager</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav">
+            <div class="logo">Albert Yalley</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hamburger Navigation -->
+        <nav id="hamburger-nav">
+            <div class="logo">Albert Yalley</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="A.jpg" alt="Albert Yalley">
+                </div>
+                <div class="profile-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="title">ALbert Yalley</h1>
+                    <p><strong>Pronunciation:</strong> AL-burt YAH-lee</p>
+                    <button onclick="playName()">🔊 Hear my name</button>
+                    <p><strong>Higher Education Leader | Student Advocate | Equity Scholar</strong></p>
+                <p>I am passionate about student success, leadership in education, and promoting equity in academic spaces.</p>
+                    <p>Explore <a href="blog.html" target="_blank">my blog</a> and <a href="article.html" target="_blank">my articles</a> to learn more about my work and experiences.</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p><strong>I am</strong> a dedicated educator, student affairs practitioner, and equity scholar with a passion for supporting students from underrepresented backgrounds. Born and raised in Ghana, he brings over six years of experience in education and student mentorship.</p>
+                
+            <p>I currently serves as a <strong>Graduate Assistant in Student Accountability and Restorative Practices</strong> at William & Mary. I also the <strong>Co-Chair of the Undergraduate Honor Council</strong>.</p>
+
+            <p>My research focuses on equity and inclusion for international students of African descent in liberal arts institutions. My long-term goal is to establish an educational institution in Ghana and contribute to national education policy as a future member of parliament.</p>
+             <!-- Image on the Right -->
+             <div class="prof-image">
+                <img src="B.jpg" alt="Albert Yalley">
+            </div>
+        </div>
+         <!-- Education & Experience -->
+         <div class="container info-section">
+            <h2>Education</h2>
+            <p>I hold a <strong>Master’s in Higher Education Administration</strong> from William & Mary. I also earned a <strong>Bachelor’s Degree in Education</strong> and a <strong>Diploma in Education</strong> from the University of Cape Coast.</p>
+        </div>
+
+        <div class="container info-section">
+            <h2>Leadership & Experience</h2>
+            <p>I have served as a <strong>Graduate Assistant in Student Accountability and Restorative Practices</strong> at William & Mary, where I supports student engagement and academic integrity. He also holds a leadership role as <strong>Co-Chair of the Undergraduate Honor Council</strong>.</p>
+            
+            <p>With over six years of experience in teaching and mentorship under the <strong>Ghana Education Service</strong>, I have worked closely with students from diverse backgrounds, ensuring equitable access to quality education.</p>
+        </div>
+
+        <div class="container info-section">
+            <h2>Long-Term Goals</h2>
+            <p>I aspire to shape educational policies that respond to students' lived realities. My ultimate vision is to establish an institution in Ghana and become a policy leader in national education reforms.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+
+            <!-- Download Button -->
+            <div class="resume-download">
+                <a href="Albert Yalley Resume.pdf" download class="btn">Download Resume</a>
+            </div>
+
+            <!-- Resume Content -->
+            <div class="resume-content">
+
+                <!-- Education Section -->
+                <div class="resume-box">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>Master's in Higher Education Administration</h4>
+                        <p><strong>William & Mary</strong> | 2024</p>
+                        <p>Focus: Student Affairs, Equity, and Inclusion.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Bachelor’s in Political Science & Sociology</h4>
+                        <p><strong>University of Ghana</strong> | 2019</p>
+                        <p>Honors: Dean’s List | Leadership Award</p>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="resume-box">
+                    <h3>Experience</h3>
+                    <div class="resume-item">
+                        <h4>Graduate Assistant, Student Accountability</h4>
+                        <p><strong>William & Mary</strong> | 2022 - Present</p>
+                        <p>Developing student programs and handling disciplinary cases using restorative justice approaches.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Teaching Assistant</h4>
+                        <p><strong>University of Ghana</strong> | 2020 - 2021</p>
+                        <p>Conducted lectures and provided academic support to undergraduate students.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+     <!-- Projects Section -->
+     <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- PowerPoint Projects -->
+            <h3 class="category-title">📊 PowerPoint Presentations</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="pptx1.jpg" alt="Leadership Presentation">
+                    <h3>Leadership Learning Intervention</h3>
+                    <p>Presentation on leadership development strategies.</p>
+                    <a href="Leadership_Learning_Intervention_Presentation.pptx" download class="btn">Download PPT</a>
+                </div>
+                <div class="project-card">
+                    <img src="pptx2.jpg" alt="Racism Presentation">
+                    <h3>Racism Presentation</h3>
+                    <p>Detailed presentation on racism and its impact.</p>
+                    <a href="RACISM PRESENTATION.pptx" download class="btn">Download PPT</a>
+                </div>
+                <div class="project-card">
+                    <img src="pptx3.jpg" alt="Sociology Proposal">
+                    <h3>Sociology Research Proposal</h3>
+                    <p>A research proposal for a sociology project.</p>
+                    <a href="Sociology Research_Proposal_Presentation.pptx" download class="btn">Download PPT</a>
+                </div>
+            </div>
+
+            <!-- PDF Projects -->
+            <h3 class="category-title">📄 PDF Reports</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="pdf1.png" alt="Final Submission">
+                    <h3>Final Submission</h3>
+                    <p>Comprehensive final project document.</p>
+                    <a href="FINALSUBMISSION.pdf" download class="btn">Download PDF</a>
+                </div>
+                <div class="project-card">
+                    <img src="pdf2.png" alt="Institutional Diversity">
+                    <h3>Institutional Diversity Analysis</h3>
+                    <p>Analytical paper on institutional diversity.</p>
+                    <a href="InstitutionalDiversityAnalyticalPaper.pdf" download class="btn">Download PDF</a>
+                </div>
+                <div class="project-card">
+                    <img src="pdf3.png" alt="Issue Brief Essay">
+                    <h3>Issue Brief Essay</h3>
+                    <p>An essay focusing on a critical issue analysis.</p>
+                    <a href="ISSUEBRIEFESSAY.pdf" download class="btn">Download PDF</a>
+                </div>
+            </div>
+
+            <!-- Word Document Projects -->
+            <h3 class="category-title">📝 Word Documents</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="doc1.jpg" alt="Critical Thinking">
+                    <h3>Critical Thinking Final</h3>
+                    <p>Final submission for the Critical Thinking course.</p>
+                    <a href="CRITICAL THINKING FINAL DOCUMENTS.docx" download class="btn">Download DOCX</a>
+                </div>
+                <div class="project-card">
+                    <img src="doc2.jpg" alt="Master's Reflection">
+                    <h3>Master’s Project Reflection</h3>
+                    <p>Reflection on a Master’s level research project.</p>
+                    <a href="Masters Project Reflection 1 (1).edited (1).docx" download class="btn">Download DOCX</a>
+                </div>
+                <div class="project-card">
+                    <img src="doc3.jpg" alt="Qualitative Data">
+                    <h3>Qualitative Data Collection</h3>
+                    <p>Assignment on qualitative research methods.</p>
+                    <a href="Qualitative Data Collection Assignment.docx" download class="btn">Download DOCX</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:albert.yalley@email.com">albert.yalley@email.com</a></p>
+        <p>Phone: <a href="tel:+17575858680">+1 (757) 585 8680</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/albert-yalley-651a82293" target="_blank">Albert Yalley</a></p>
+        <p>Location: Williamsburg, VA / Ghana</p>
+    </section>
+    
+    
+    <!-- Footer -->
+<footer style="text-align: center; padding: 10px; background-color: #f1f1f1; margin-top: 20px;">
+    <p>&copy;Albert Yalley . All rights reserved.</p>
+</footer>
+
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
