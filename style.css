@@ -24,6 +24,7 @@ nav,
     align-items: center;
     height: 10vh;
     padding: 0 2rem;
+    background: #434343;
 }
 
 .nav-links {
