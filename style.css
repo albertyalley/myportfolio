@@ -337,91 +337,65 @@ nav,
         }
     }
  /* General Section Styling */
+/* General Section Styling */
 #coursework {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #eef2f3, #dce1e4); /* Softer gradient */
+    padding: 40px;
+    background: #f0f0f0; /* Light grey background */
     border-radius: 12px;
     max-width: 1000px;
     margin: 30px auto;
-    text-align: center;
-    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-family: 'Arial', sans-serif;
 }
 
 /* Section Title */
 h2 {
-    color: #222;
-    font-size: 30px;
-    font-weight: 600;
+    color: #002147;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 
-/* Course Card Styling */
+/* Coursework Box */
 .course {
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    text-align: left;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Softened Background Colors */
-.theory { background: linear-gradient(to right, #ffb6c1, #ffdee9); }
-.student-affairs { background: linear-gradient(to right, #c1e1ff, #a6c1ee); }
-.assessment { background: linear-gradient(to right, #c1f0c1, #84fab0); }
-
-/* Course Title */
-.course h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-/* Course List */
-.course ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.course li {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 10px;
-    margin: 6px 0;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.course li::before {
-    content: "✔";
-    font-weight: bold;
-    color: #fff;
-}
-
-/* Icon Styling */
-.icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-    color: white;
+    background: #ffffff; /* White box */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #002147; /* Blue left border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 /* Hover effect */
 .course:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Title */
+.course h3 {
+    color: #002147;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Course List */
+.course ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course li {
+    padding: 8px;
+    margin-bottom: 6px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    border-left: 3px solid #002147; /* Blue accent on each item */
+    padding-left: 10px;
 }
 
 /* Responsive Design */
@@ -431,18 +405,15 @@ h2 {
     }
 
     .course {
-        padding: 20px;
-        text-align: center;
+        padding: 15px;
     }
 
     h2 {
-        font-size: 26px;
-    }
-
-    .icon {
-        font-size: 40px;
+        font-size: 24px;
     }
 }
+
+
 
 /* Resume Boxes */
 .resume-box {
