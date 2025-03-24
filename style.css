@@ -625,6 +625,71 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+/* Fun Fact Styling */
+.fun-fact {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fun Fact Hover Effect */
+.fun-fact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling (Left Side) */
+.fun-fact-img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Text Content (Right Side) */
+.fun-fact-content {
+    flex: 1;
+    text-align: left;
+}
+
+.fun-fact h3 {
+    color: #C1272D; /* Elegant dark red */
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fun-fact p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fun-fact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fun-fact-img {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .fun-fact-content {
+        text-align: center;
+    }
+}
+
 #contact {
     width: 100%;
     padding: 40px 20px;
