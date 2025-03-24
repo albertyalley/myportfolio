@@ -626,41 +626,44 @@ h2 {
     }
 }
 /* Fun Fact Styling */
+/* Fun Fact Section */
 .fun-fact {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: #fff;
     padding: 20px;
     margin: 30px auto;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
+    max-width: 900px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Fun Fact Hover Effect */
+/* Hover Effect */
 .fun-fact:hover {
     transform: translateY(-3px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styling (Left Side) */
+/* Image (Left) */
 .fun-fact-img {
-    width: 250px;
+    width: 300px;
     height: auto;
     border-radius: 12px;
-    margin-right: 20px;
     object-fit: cover;
+    flex-shrink: 0; /* Ensures image doesn't shrink */
 }
 
-/* Text Content (Right Side) */
+/* Text (Right) */
 .fun-fact-content {
     flex: 1;
+    padding-left: 20px; /* Creates spacing from the image */
     text-align: left;
 }
 
 .fun-fact h3 {
-    color: #C1272D; /* Elegant dark red */
+    color: #C1272D; /* Classy deep red */
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -672,7 +675,7 @@ h2 {
     line-height: 1.6;
 }
 
-/* Responsive Design */
+/* Responsive Design (Mobile View) */
 @media (max-width: 768px) {
     .fun-fact {
         flex-direction: column;
@@ -682,10 +685,10 @@ h2 {
     .fun-fact-img {
         width: 100%;
         margin-bottom: 15px;
-        margin-right: 0;
     }
 
     .fun-fact-content {
+        padding-left: 0;
         text-align: center;
     }
 }
