@@ -252,6 +252,56 @@ nav,
     max-width: 900px;
     margin: auto;
 }
+ .education-experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .info-section img {
+        width: 50%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .info-section div {
+        width: 50%;
+        text-align: center;
+    }
+
+    /* Background Colors */
+    .education { background: #f3f4f6; }
+    .experience { background: #e6f7ff; }
+    .goals { background: #fff5e6; }
+
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 768px) {
+        .info-section {
+            flex-direction: column;
+            width: 90%;
+            text-align: center;
+        }
+
+        .info-section img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .info-section div {
+            width: 100%;
+        }
+    }
 
 /* Resume Boxes */
 .resume-box {
