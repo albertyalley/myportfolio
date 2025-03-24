@@ -489,6 +489,10 @@ nav,
     max-width: 600px;
     margin: 20px auto;
 }
+#contact {
+    background: #000000 !important;
+}
+
 
 #contact h2 {
     color: #333;
